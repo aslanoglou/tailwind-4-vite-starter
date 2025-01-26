@@ -1,1 +1,76 @@
 @import "tailwindcss";
+@font-face {
+    font-family: PPMori;
+    src: url('./public/fonts/PPMori-Regular.otf');
+    src: url('./public/fonts/PPMori-Regular.otf#iefix') format('embedded-opentype'),
+    url('./public/fonts/PPMori-Regular.ttf') format('truetype'),
+    url('./public/fonts/PPMori-Regular.woff') format('woff'),
+    url('./public/fonts/PPMori-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: PPMori;
+    src: url('./public/fonts/PPMori-Bold.otf');
+    src: url('./public/fonts/PPMori-Bold.otf#iefix') format('embedded-opentype'),
+    url('./public/fonts/PPMori-Bold.ttf') format('truetype'),
+    url('./public/fonts/PPMori-Bold.woff') format('woff'),
+    url('./public/fonts/PPMori-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: PPMori;
+    src: url('./public/fonts/PPMori-RegularItalic.otf');
+    src: url('./public/fonts/PPMori-RegularItalic.otf#iefix') format('embedded-opentype'),
+    url('./public/fonts/PPMori-RegularItalic.ttf') format('truetype'),
+    url('./public/fonts/PPMori-RegularItalic.woff') format('woff'),
+    url('./public/fonts/PPMori-RegularItalic.woff2') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: PPPangram;
+    src: url('./public/fonts/PPPangramSansRounded-Bold.otf');
+    src: url('./public/fonts/PPPangramSansRounded-Bold.otf#iefix') format('embedded-opentype'),
+    url('./public/fonts/PPPangramSansRounded-Bold.ttf') format('truetype'),
+    url('./public/fonts/PPPangramSansRounded-Bold.woff') format('woff'),
+    url('./public/fonts/PPPangramSansRounded-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url('./public/fonts/icomoon.eot?f6idwg');
+    src: url('./public/fonts/icomoon.eot?f6idwg#iefix') format('embedded-opentype'),
+    url('./public/fonts/icomoon.ttf?f6idwg') format('truetype'),
+    url('./public/fonts/icomoon.woff?f6idwg') format('woff'),
+    url('./public/fonts/icomoon.svg?f6idwg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-mobile: 32.5rem  /* 520/16 */;
+    --breakpoint-tablet: 48rem  /* 768/16 */;
+    --breakpoint-desktop: 64rem  /* 1024/16 */;
+    --breakpoint-large: 80rem  /* 1280/16 */;
+    --breakpoint-xlarge: 90rem  /* 1440/16 */;
+
+    --container-*: initial;
+    --container-mobile:calc(var(--breakpoint-mobile) - 2rem);
+    --container-tablet: calc(var(--breakpoint-tablet) - 2rem);
+    --container-desktop: calc(var(--breakpoint-desktop) - 2rem);
+    --container-large: calc(var(--breakpoint-large) - 2rem);
+    --container-xlarge: calc(var(--breakpoint-xlarge) - 2rem);
+
+    --font-ppMori: "PPMori", sans-serif;
+    --font-ppPangram: "PPPangram", sans-serif;
+    --font-icoMoon: "icomoon", sans-serif;
+    --icon-stars: '\e917';
+}
