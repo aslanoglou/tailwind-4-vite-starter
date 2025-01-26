@@ -55,6 +55,8 @@
     font-display: block;
 }
 @theme {
+    --font-sans: var(--font-ppMori);
+
     --breakpoint-*: initial;
     --breakpoint-mobile: 32.5rem  /* 520/16 */;
     --breakpoint-tablet: 48rem  /* 768/16 */;
