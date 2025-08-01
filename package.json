@@ -5,14 +5,17 @@
   },
   "name": "tailwind-4-vite",
   "version": "1.0.0",
-  "devDependencies": {},
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node src/convert-to-webp.js && vite",
+    "build": "node src/convert-to-webp.js && vite build",
     "preview": "vite preview",
     "format": "prettier --write './src/**/*.{html,js,jsx,ts,tsx}'"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "sharp": "^0.34.2",
+    "vite-plugin-html-minify": "^1.0.0"
+  }
 }
