@@ -6,10 +6,10 @@
   "name": "tailwind-4-vite",
   "version": "1.0.0",
   "scripts": {
-    "dev:project-1":  "vite --config project-1/vite.config.mjs",
+    "dev:project-1": "vite --config project-1/vite.config.mjs",
     "build:project-1": "vite build --config project-1/vite.config.mjs",
     "preview:project-1": "vite preview --config project-1/vite.config.mjs",
-    "dev:project-2":  "vite --config project-2/vite.config.mjs",
+    "dev:project-2": "vite --config project-2/vite.config.mjs",
     "build:project-2": "vite build --config project-2/vite.config.mjs",
     "preview:project-2": "vite preview --config project-2/vite.config.mjs",
     "format": "prettier --write './src/**/*.{html,js,jsx,ts,tsx}'"
@@ -19,6 +19,7 @@
   "description": "",
   "devDependencies": {
     "sharp": "^0.34.2",
+    "vite": "^7.0.6",
     "vite-plugin-html-minify": "^1.0.0"
   }
 }
