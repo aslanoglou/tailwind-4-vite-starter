@@ -2,7 +2,13 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
     server: {
-        open: "/index.html",
+        host: true,
+        port: 5173,
+        strictPort: true,
+        allowedHosts: [
+            'hall-of-fame-2025.ddev.site',
+        ],
+        open: '/index.html',
     },
     build: {
         rollupOptions: {
