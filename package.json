@@ -5,6 +5,7 @@
   },
   "name": "tailwind-4-vite",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "node src/convert-to-webp.js && vite",
     "build": "node src/convert-to-webp.js && vite build",
