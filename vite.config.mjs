@@ -6,15 +6,18 @@ export default defineConfig({
     plugins: [tailwindcss()],
 
     server: {
-        host: true,           // 0.0.0.0 μέσα στο container
+        host: true,
         port: 5173,
         strictPort: true,
 
-        allowedHosts: ['tailwind-4-vite-starter.ddev.site'],
+        // 🔥 σημαντικό για DDEV
+        origin: process.env.DDEV_PRIMARY_URL_WITHOUT_PORT + ':5173',
 
-        // ΣΗΜΑΝΤΙΚΟ για ddev https router
+        // 🔥 μην περιορίζεις hosts
+        allowedHosts: true,
+
         hmr: {
-            host: 'tailwind-4-vite-starter.ddev.site',
+            host: process.env.DDEV_HOSTNAME,
             protocol: 'wss',
             clientPort: 443,
         },
